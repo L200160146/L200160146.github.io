@@ -1,7 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<!-- <meta name="description" content=" Divisima | eCommerce Template">
+	<meta name="keywords" content="divisima, eCommerce, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<!-- Favicon -->
+	<!-- <link href="img/favicon.ico" rel="shortcut icon" />
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/flaticon.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+
 <body>
-<h1>Hello World!!</h1>
-<p>Cintya here.</p>
+</br>
+<center> <h3>BIOMETRICS</h3></center>
+<center> <h5>TUGAS 2 - IMAGE PREPROCESSING (FINGER PRINT)</h5></center>
+<center> <h5>Wahyu Cintya Dewi / L200160146</h5></center>
+<p>
+<h6>   Prerequisites</h6></p>
+1. python 3.7.1 <br>
+2. python imaging library (PIL)
+
+<br><br>
+<h6>Tahapan Proses :</h6>
+1. Foto sidik jari yg telah dibuat black n white atau greyscale <br>
+2. Melakukan proses sesuai referensi <a href = https://github.com/rtshadow/biometrics/>https://github.com/rtshadow/biometrics</a>
+<br>
+<br>
+<h6>Hasil Preprocessing menggunakan proses Poincare, Gabor, Thinning dan Extract Minutiae</h6><br>
+
+	<!-- Page Preloder -->
+	<!-- <div id="preloder">
+		<div class="loader"></div>
+	</div> -->
+
+	
 </body>
+
+
+	<!-- Hero section -->
+	<section class="hero-section"  background-color="#C0C0C0">
+		<div class="hero-slider owl-carousel">
+			<div>
+				<div class="row">
+					<div class="col-xl-4 col-lg-7 text-black" >
+						<img src="img/cintya1.jpg">
+						
+					</div>
+
+				<div>
+					<h6>Gambar Original</h6><br>
+					Gambar menggunakan cap sidik ibu jari tinta biru di fotokopi agar lebih jelas, <br>
+					setelah itu baru difoto.
+				</div>
+				</div>
+			</div>
+			<div class="hs-item set-bg" data-setbg="">
+
+					<div class="row">
+						<div class="col-xl-4 col-lg-7 text-white">
+							<img src="img/poincare.JPG">
+						</div>
+					<div>
+					<h6>Proses POINCARE</h6>
+					<br>Menghasilkan titik-titik / point-point warna merah dan hijau pada titik-titik<br>
+					tertentu pada sidik jari.
+					</div>
+				</div>
+				</div>
+			<div >
+
+					<div class="row">
+						<div class="col-xl-4 col-lg-7 text-white">
+							<img src="img/gabor.JPG">
+						</div>
+					<div>
+						
+					<h6>Proses GABOR</h6> <br>
+					Digunakan untuk memperbaiki kualitas citra sidik jari hasil akusisi, <br>
+						serta untuk mengambil ciri makro dan mikro yang terdapat dalam citra sidik jari,<br>
+						sehingga diperoleh jumlah ciri yang tetap untuk setiap sidik jari
+					</div>
+				</div>
+				</div>
+				<div >
+
+						<div class="row">
+							<div class="col-xl-4 col-lg-7 text-white">
+								<img src="img/thining.JPG">
+								
+							</div>
+						<div>
+						<h6>
+						Proses THINNING</h6>
+						<br>
+						Pada pengenalan sidik jari metode thinning sangat penting karena dapat <br>
+						mengurangi waktu proses sistem. Hasil dari metode thinning tidak merubah struktur <br>
+						sidik jari dan mempertahankan lokasi ridge pada sidik jari dan ciri falley atau bukit. 
+					</div>
+						</div>
+					</div>
+					<div >
+
+							<div class="row">
+								<div class="col-xl-4 col-lg-7 text-white">
+									<img src="img/crossing_number.JPG">
+									
+								</div>
+					<div>
+								<h6>
+									Proses EXTRACT MINUTIAE</h6>
+									<br>
+									Crossing number digunakan untuk mengidentifikasi ujung ridge dan ridge bifurcations.
+								</div>
+								</div>
+						</div>
+	
+	</section>
+
+	</section> 
+<table border='1'>
+	<tr align='center'>
+		<td >ORIGINAL</td>
+		<td>POINCARE</td>	
+		<td>GABOR</td>	
+		<td>THINNING</td>
+		<td>EXTRACT MINUTIAE</td>		
+	</tr>
+	<tr>
+			<td><img src="img/cintya1.jpg"></td>
+			<td><img src="img/poincare.JPG"></td>	
+			<td><img src="img/gabor.JPG"></td>	
+			<td><img src="img/thining.JPG"></td>
+			<td><img src="img/crossing_number.JPG"></td>
+	</tr>
+</table>
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
 </html>
